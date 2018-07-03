@@ -1,0 +1,105 @@
+<html>
+
+    <head>
+        <link href="css/hamburgers.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <nav id="navigation">
+            <div class="perma-header closed" id="permaheader">
+                <div class="container">
+                    <h1><a href="index.html">Marcella<br />Pereda</a></h1>
+                </div>
+            </div>
+            <div class="large-header">
+                <div class="container">
+                        <h1 id="title"><a href="index.html">Marcella<br />Pereda</a></h1>
+                    <ul>
+                        <li><a href="news.html">News</a></li>                        
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Pictures</a></li>
+                        <li><a href="#">Bio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<div class="bio">
+    <div class="top">
+        <h1>About Marcella</h1>
+        <p class="first"><strong>Marcella Pereda</strong> is a west coast transplant who moved to the city two years ago. Having spent half her life in Los Angeles and the other half in Salt Lake City, she figured it was about time to move east. A martial artist, she grew up spending all of her free time training and competing in Kickboxing, Brazilian Jiu Jitsu and Krav Maga. So don't underestimate her 5'5 frame!</p>
+        <p>Her love of classical theatre began very young, due to an obsession with A Midsummer Night's Dream. The obsession never faded by the way, she's still desperate to play Puck one day! Her passion for acting developed in highschool, and she went on to receive her BFA from the University of Utah's Actor Training Program. Lately, Marcella has been lucky enough to spend her time on new works in the indie theatre scene. </p>
+        <p>New York Credits include: <strong>I'm Afraid of Death but Not of Dying</strong> (She NYC Arts Festival)  <strong>my parents are here tonight</strong> (Two Girls and A Boat), <strong>Love's Labour's Lost</strong> (Bad Quarto Productions). Regional Credits include: <strong>Much Ado About Nothing</strong> and <strong>A Few Good Men</strong> (Pioneer Memorial Theatre), <strong>The Skin of Our Teeth</strong> (The Grand Theatre), and <strong>Remington &amp; Weasel</strong> (PYGmalion Theatre Company).</p>
+    </div>
+</div> 
+
+<div class="image-strip">
+    <div class="image-strip-container">
+            <div class="image first wide" style="background:url('images/slider1.png');"></div><div class="image narrow" style="background:url('images/slider2.png');"></div><div class="image wide" style="background:url('images/slider3.png');"></div>
+    </div>
+</div>
+
+<div class="bio">
+        <div class="top">
+            <h1>Contact</h1>
+            <p class="first">I always want to hear what people are working on so let me know about your latest show or project.</p>
+            <p><a class="contact-action" href="#">Email</a><a class="contact-action" href="#">Facebook</a><a class="contact-action" href="#">Instagram</a></p>
+        </div>
+    </div> 
+
+    <div class="image-strip">
+            <div class="image-strip-container">
+                    <div class="image first wide" style="background:url('images/slider1.png');"></div><div class="image narrow" style="background:url('images/slider2.png');"></div><div class="image wide" style="background:url('images/slider3.png');"></div>
+            </div>
+        </div>
+
+        <div> <br /><br /><br /><br /></div>
+
+
+            <script typ="text/javascript">
+                window.onscroll = function() { myFunction() };
+                var navigation = document.getElementById("navigation");
+                var title = document.getElementById("title");
+                var hamburger = document.getElementById("hamburger");
+                var perma = document.getElementById("permaheader");
+                
+                // hamburger.onclick = function() { toggleMenu() };
+
+                var sticky = 690;
+                var menu = 745;
+
+                // function toggleMenu() {
+                //     if(hamburger.className.indexOf("is-active") < 0) {
+                //         hamburger.classList.add("is-active");
+                //         perma.classList.add("open");
+                //         document.body.style.overflow = "hidden";        
+                //     } else {
+                //         hamburger.classList.remove("is-active");
+                //         perma.classList.remove("open");
+                //         document.body.style.overflow = "auto";
+                //     }
+                // }
+
+                function myFunction() {
+                    var offset = window.pageYOffset;
+                    if(offset >= sticky) {
+                        navigation.classList.add("sticky");
+                    } else {
+                        navigation.classList.remove("sticky");
+                    }
+                    if(offset >= menu) {
+                        navigation.classList.add("menu-sticky");
+                    } else {
+                        navigation.classList.remove("menu-sticky");
+                    }
+                }
+            </script>
+    </body>
+</html>
+
+
