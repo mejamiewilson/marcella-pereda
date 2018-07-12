@@ -42,7 +42,7 @@ nav .small-header {
     position: relative;
     z-index: 4;
     text-shadow: 0px 1px 2px rgab(0,0,0,0.3);
-    overflow: hidden;
+    
 }
 nav #hamburger {
     display: none;
@@ -66,17 +66,19 @@ nav .perma-header .container {
 h1 {
     color: #E56B42;
     font-size: 32px;
-}
-
-h1 {
-    -webkit-transition: font-size 0.3s;
-    transition: font-size 0.3s;
     text-transform: uppercase; 
     font-size: 42px;
     letter-spacing: 0.3em;
 }
-h1:hover {
-    cursor:pointer;
+h2 {
+    color: #E56B42;
+    text-transform: uppercase; 
+    font-size: 32px;
+}
+nav h1 {
+    -webkit-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+    
 }
 h1 a {
     color: white;
@@ -251,6 +253,7 @@ nav.menu-sticky ul {
     background: #E56B42;
     font-size: 18px;
     padding: 5px 10px;
+    margin-bottom:10px;
     color: white;
     text-decoration: none;
     margin-right: 10px;
@@ -260,6 +263,7 @@ nav.menu-sticky ul {
     display:block;
     overflow:hidden;
     height: 400px;
+    margin-bottom: 10px;
 }
 .image-strip-container {
     width: 1620px;
@@ -274,6 +278,8 @@ nav.menu-sticky ul {
     height: 400px;
     background:black;
     margin-left: 10px;
+    background-size: auto 400px;
+    background-position: center;
 }
 .image.wide {
     width: 600px;
@@ -284,8 +290,23 @@ nav.menu-sticky ul {
 .image.first {
     margin-left: 0px;
 }
-
-
+.image-group {
+    text-align: left;
+    
+}
+.image-col {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-position:center;
+    background-size: auto 200px;
+    background: blue;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.image-col:nth-child(2n) {
+    width: 400px;
+}
 
 
 @media only screen and (max-width: 1240px) {
